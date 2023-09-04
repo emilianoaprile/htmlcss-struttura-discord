@@ -4,9 +4,16 @@
     box-sizing: border-box;
 }
 
+/* UTILITY */
+
 .container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .header-row {
@@ -21,17 +28,6 @@
 
 .row-2, .row-4 {
     display: flex;
-    /* flex-direction: row-reverse; */
-}
-
-.row-3 {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.row-footer-1 {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .row-footer-2 {
@@ -39,6 +35,7 @@
     justify-content: space-between;
     align-items: center;
 }
+
 
 /* HEADER */
 
