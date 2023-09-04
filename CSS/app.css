@@ -19,6 +19,17 @@
     justify-content: center;
 }
 
+.row-2 {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 /* HEADER */
 
 .col-6 {
@@ -50,6 +61,15 @@
     background-color: #EF81EE;
 }
 
+/* MAIN second - third - fourth Section */
+
+.col-4{
+    flex-basis: calc(100% / 3);
+} 
+
+.col-8 {
+    flex-grow: 1;
+}
 
 
 
@@ -76,5 +96,27 @@
     min-height: 300px;
     background-color: #00049C;
     padding: 20px;
+}
+
+.debug .main-section-2, .debug .main-section-4 {
+    background-color: white;
+    padding: 30px;
+    
+}
+
+.debug .main-section-3 {
+    background-color: lightgray;
+    padding: 30px;
+    
+}
+
+.debug .col-4 {
+    background-color: #FEC0CB;
+    min-height: 300px;
+}
+
+.debug .col-8 {
+    background-color: #1E90FE;
+    min-height: 350px;
 }
 
