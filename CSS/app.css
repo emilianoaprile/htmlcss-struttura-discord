@@ -37,6 +37,7 @@
 .row-footer-2 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* HEADER */
@@ -97,7 +98,7 @@
     padding-top: 15px;
 }
 
-.nav-footer {
+.nav-footer, .row-footer-2 {
     min-height: 50px;
 }
 
