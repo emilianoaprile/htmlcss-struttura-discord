@@ -5,7 +5,7 @@
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -42,6 +42,11 @@
 
 /* HEADER */
 
+.page-header {
+    padding: 10px;
+    min-height: 50px;
+}
+
 .col-6 {
     flex-basis: calc(100% / 2);
 }
@@ -52,7 +57,6 @@
 
 .logo, .link, .login, .button {
     padding: 5px;
-    border: 1px dotted black;
 }
 
 .link {
@@ -68,20 +72,40 @@
 .col-10 {
     min-height: 260px;
     flex-basis: 50%;
-    background-color: #EF81EE; 
+     
 }
+
+.main-section-1 {
+    min-height: 300px;
+    padding: 20px;
+}
+
 
 /* MAIN second - third - fourth Section */
 
+.main-section-2, .main-section-4 {
+    padding: 30px;
+}
+
+.main-section-3 {
+    padding: 30px;
+}
+
 .col-4{
     flex-basis: calc(100% / 3);
+    min-height: 300px;
 } 
 
 .col-8 {
     flex-grow: 1;
+    min-height: 350px;
 }
 
 /* MAIN fifth Section */
+
+.main-section-5 {
+    padding: 30px;
+}
 
 .col {
     flex-basis: 100%;
@@ -89,6 +113,14 @@
 }
 
 /* FOOTER */
+
+.page-footer {
+    padding-top: 5px;
+}
+
+.footer-section-1 {
+    padding-bottom: 25px;
+}
 
 .col-2 {
     flex-basis: calc(100% / 6);
@@ -113,9 +145,11 @@
 
 /* DEBUG */
 
+.debug .logo, .debug .link, .debug .login, .debug .button {
+    border: 1px dotted black;
+}
+
 .debug .page-header {
-    padding: 10px;
-    height: 50px;
     background-color: #ADD8E6;
 }
 
@@ -124,51 +158,43 @@
 }
 
 .debug .main-section-1 {
-    min-height: 300px;
     background-color: #00049C;
-    padding: 20px;
+}
+
+.debug .col-10 {
+    background-color: #EF81EE;
 }
 
 .debug .main-section-2, .debug .main-section-4 {
-    background-color: white;
-    padding: 30px;
-    
+    background-color: white; 
 }
 
 .debug .main-section-5 {
-    background-color: lightgray;
-    padding: 30px;
+    background-color: lightgray;  
 }
 
 .debug .main-section-3 {
-    background-color: lightgray;
-    padding: 30px;
-    
+    background-color: lightgray; 
 }
 
 .debug .page-footer {
-    background-color: #23272A;
-    padding-top: 5px;
+    background-color: #23272A;   
 }
 
 .debug .footer-section-1 {
-    border-bottom: 1px solid white;
-    padding-bottom: 25px;
+    border-bottom: 1px solid white;  
 }
 
 .debug .nav-footer {
     background-color: #1FB2AA;
 }
 
-
 .debug .col-4 {
-    background-color: #FEC0CB;
-    min-height: 300px;
+    background-color: #FEC0CB;  
 }
 
 .debug .col-8 {
-    background-color: #1E90FE;
-    min-height: 350px;
+    background-color: #1E90FE;  
 }
 
 .debug .col {
