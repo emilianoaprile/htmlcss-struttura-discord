@@ -1,14 +1,17 @@
+/* UTILITY */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* UTILITY */
-
 .container {
     max-width: 900px;
     margin: 0 auto;
+}
+
+.row {
+    display: flex;
 }
 
 .row-reverse {
@@ -16,7 +19,7 @@
     flex-direction: row-reverse;
 }
 
-.header-row {
+.space-between {
     display: flex;
     justify-content: space-between;
 }
@@ -26,15 +29,12 @@
     justify-content: center;
 }
 
-.row-2, .row-4 {
-    display: flex;
-}
 
 .row-footer-2 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+
 
 
 /* HEADER */
@@ -48,9 +48,6 @@
     flex-basis: calc(100% / 2);
 }
 
-.col-3 {
-    flex-grow: 1;
-}
 
 .logo, .link, .login, .button {
     padding: 5px;
@@ -64,17 +61,13 @@
     text-align: right;
 }
 
+
+
 /* MAIN firt section */
 
 .col-10 {
-    min-height: 260px;
-    flex-basis: 50%;
-     
-}
-
-.main-section-1 {
-    min-height: 300px;
-    padding: 20px;
+    min-height: 250px;
+    flex-basis: calc((100% / 12) * 10)   
 }
 
 
@@ -89,12 +82,12 @@
 }
 
 .col-4{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 12) * 4);
     min-height: 300px;
 } 
 
 .col-8 {
-    flex-grow: 1;
+    flex-basis: calc((100% / 12) * 8);
     min-height: 350px;
 }
 
@@ -104,10 +97,12 @@
     padding: 30px;
 }
 
-.col {
+.col-big {
     flex-basis: 100%;
     min-height: 600px;
 }
+
+
 
 /* FOOTER */
 
@@ -120,7 +115,7 @@
 }
 
 .col-2 {
-    flex-basis: calc(100% / 6);
+    flex-basis: calc((100% / 12) * 2);
 }
 
 .footer-section-2 {
@@ -135,9 +130,7 @@
     align-items: center;
 }
 
-
-
-
+/* ----------------------------------------------------------- */
 
 
 /* DEBUG */
@@ -150,16 +143,18 @@
     background-color: #ADD8E6;
 }
 
-.debug .nav-header {
+.debug .col, .debug .col-6 {
     background-color: #DBA421;
 }
 
 .debug .main-section-1 {
     background-color: #00049C;
+    padding: 20px;
 }
 
 .debug .col-10 {
     background-color: #EF81EE;
+    border: 2px dotted white;
 }
 
 .debug .main-section-2, .debug .main-section-4 {
@@ -187,20 +182,28 @@
 }
 
 .debug .col-4 {
-    background-color: #FEC0CB;  
+    background-color: #FEC0CB;
+    border: 2px dotted white;  
 }
 
 .debug .col-8 {
-    background-color: #1E90FE;  
+    background-color: #1E90FE; 
+    border: 2px dotted black; 
 }
 
-.debug .col {
+.debug .col-big {
     background-color: green;
+    border: 2px dotted black;
 }
 
 .debug .col-2 {
     background-color: #1FB2AA;
     border: 1px dotted white;
+}
+
+.debug .bg-coral {
+    color: white;
+    background-color: coral;
 }
 
 
